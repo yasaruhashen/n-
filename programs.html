@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degree Programs - UniHub Lanka</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===================================================
+       TOP ANNOUNCEMENT BAR (Top Strip)
+       =================================================== -->
+  <header class="top-bar">
+    <div class="container-fluid px-lg-5 px-3">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+
+        <!-- Left: Trust Badges -->
+        <div class="d-flex align-items-center flex-wrap">
+          <span class="top-bar-badge">
+            <i class="bi bi-shield-check"></i> Direct University Fee Payments Only
+          </span>
+          <span class="top-bar-divider-dot">•</span>
+          <span class="text-white-50">UGC-DEB Entitled & NAAC A++/A+ Partner Universities</span>
+        </div>
+
+        <!-- Right: Contact & Location Info -->
+        <div class="d-none d-md-flex align-items-center">
+          <a href="tel:+94721234335" class="top-bar-info">
+            <i class="bi bi-telephone-fill small"></i> +94 72 12 34 335
+          </a>
+          <span class="top-bar-sep">|</span>
+          <span class="top-bar-info">
+            616, 6th Floor, Jana Jaya City, Rajagiriya
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       MAIN NAVIGATION BAR
+       =================================================== -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid px-lg-5 px-3">
+
+      <!-- Logo & Brand Name -->
+      <a class="brand-wrapper" href="index.html">
+        <img src="assest/1.png" alt="UniHub Lanka Logo" class="brand-emblem">
+        <div class="brand-text-group">
+          <span class="brand-title">UniHub Lanka</span>
+          <span class="brand-subtitle">GATEWAY TO GLOBAL DEGREES</span>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Toggler Button -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#unihubNavbar" aria-controls="unihubNavbar" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list fs-1 text-dark"></i>
+      </button>
+
+      <!-- Nav Links & CTA -->
+      <div class="collapse navbar-collapse" id="unihubNavbar">
+
+        <!-- Navigation Links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="programs.html">Degree Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="universities.html">Partner Universities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admissions-faq.html">Admissions & FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us & Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right CTA Button -->
+        <div class="nav-cta-wrapper d-flex align-items-center">
+          <a href="https://wa.me/94721234335" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-advisor">
+            WhatsApp Advisor
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ===================================================
+       DEGREE PROGRAMS HERO BANNER SECTION (Top Section)
+       =================================================== -->
+  <section class="programs-hero">
+    <div class="container position-relative" style="z-index: 2;">
+
+      <!-- Category Tag -->
+      <span class="hero-tag">PROGRAMS</span>
+
+      <!-- Main Title -->
+      <h1 class="programs-hero-title">
+        Find the degree that fits your<br class="d-none d-md-inline"> ambition.
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="programs-hero-subtitle">
+        Industry-relevant programs designed for real careers, delivered with the flexibility your life demands.
+      </p>
+
+      <!-- Feature Checklist Badges -->
+      <div class="programs-hero-features">
+        <div class="hero-feature-item">
+          <span class="hero-feature-check">✓</span>
+          <span>100% online</span>
+        </div>
+        <div class="hero-feature-item">
+          <span class="hero-feature-check">✓</span>
+          <span>Weekend live classes</span>
+        </div>
+        <div class="hero-feature-item">
+          <span class="hero-feature-check">✓</span>
+          <span>Globally eligible</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================
+       DEGREE PROGRAMS LIST & TAB NAVIGATION SECTION
+       =================================================== -->
+  <section class="programs-section">
+    <div class="container">
+
+      <!-- Tabs Toggle Switcher (Postgraduate / Undergraduate) -->
+      <div class="d-flex justify-content-center mb-5">
+        <ul class="nav nav-pills programs-tabs-nav" id="degreeTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="postgraduate-tab" data-bs-toggle="pill"
+              data-bs-target="#postgraduate-pane" type="button" role="tab" aria-controls="postgraduate-pane"
+              aria-selected="true">
+              Postgraduate <span class="tab-extra">programs</span>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="undergraduate-tab" data-bs-toggle="pill" data-bs-target="#undergraduate-pane"
+              type="button" role="tab" aria-controls="undergraduate-pane" aria-selected="false">
+              Undergraduate <span class="tab-extra">programs</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="tab-content" id="degreeTabsContent">
+
+        <!-- ===============================================
+             1. POSTGRADUATE PROGRAMS TAB PANE
+             =============================================== -->
+        <div class="tab-pane fade show active" id="postgraduate-pane" role="tabpanel" aria-labelledby="postgraduate-tab"
+          tabindex="0">
+
+          <!-- Card 01: Master of Business Administration (MBA) -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">01</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <i class="bi bi-briefcase"></i>
+                  <span class="badge-acronym">MBA</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">POSTGRADUATE</span>
+                  <h3 class="program-card-title">Online MBA</h3>
+                  <p class="program-card-desc">Popular specializations: Human Resources (HRM), Healthcare Management,
+                    Business Analytics, Finance, Marketing, IT Management, Operations & Supply Chain, International
+                    Business, FinTech.</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">2 years · 4 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">Recognized Bachelor's degree in any discipline</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Manipal, Amity, LPU, CU, VGU, JAIN, NMIMS, Symbiosis, DPU, SRM</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20Online%20MBA%20program."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card 02: Master of Computer Applications (MCA) -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">02</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <i class="bi bi-window-fullscreen"></i>
+                  <span class="badge-acronym">MCA</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">POSTGRADUATE</span>
+                  <h3 class="program-card-title">Online MCA</h3>
+                  <p class="program-card-desc">Popular specializations: Artificial Intelligence & ML, Data Science,
+                    Cyber Security, Cloud Computing, Full Stack Software Engineering.</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">2 years · 4 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">Bachelor's in IT/CS or any degree with Mathematics</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Manipal, Amity, LPU, CU, VGU, JAIN, DPU, SRM</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20Online%20MCA%20program."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card 03: MSc Data Science -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">03</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"></path>
+                  </svg>
+                  <span class="badge-acronym">MSc</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">POSTGRADUATE</span>
+                  <h3 class="program-card-title">MSc Data Science</h3>
+                  <p class="program-card-desc">Popular specializations: Machine Learning, Big Data Analytics, Predictive
+                    Modeling, AI Architecture, Data Visualization.</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">2 years · 4 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">Bachelor's in Science, Engineering, IT, Commerce, Statistics or
+                          Mathematics</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Amity, LPU, CU, Symbiosis</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20MSc%20Data%20Science%20program."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card 04: Online MCom -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">04</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <i class="bi bi-wallet2"></i>
+                  <span class="badge-acronym">MCom</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">POSTGRADUATE</span>
+                  <h3 class="program-card-title">Online MCom</h3>
+                  <p class="program-card-desc">Popular specializations: Financial Management, Corporate Accounting,
+                    International Finance, Corporate Governance.</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">2 years · 4 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">Bachelor's degree in Commerce, Management, or related field</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Manipal, Amity, LPU, CU, VGU, JAIN</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20Online%20MCom%20program."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card 05: Online MA -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">05</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <i class="bi bi-book"></i>
+                  <span class="badge-acronym">MA</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">POSTGRADUATE</span>
+                  <h3 class="program-card-title">Online MA</h3>
+                  <p class="program-card-desc">Popular specializations: English Literature, Economics, Journalism & Mass
+                    Communication, Public Policy.</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">2 years · 4 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">Recognized Bachelor's degree in any discipline</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Manipal, Amity, LPU, CU, VGU, JAIN</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20Online%20MA%20program."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ===============================================
+             2. UNDERGRADUATE PROGRAMS TAB PANE
+             =============================================== -->
+        <div class="tab-pane fade" id="undergraduate-pane" role="tabpanel" aria-labelledby="undergraduate-tab"
+          tabindex="0">
+
+          <!-- Card 01: Bachelor of Business Administration (BBA) -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">01</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <i class="bi bi-briefcase"></i>
+                  <span class="badge-acronym">BBA</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">UNDERGRADUATE</span>
+                  <h3 class="program-card-title">Online BBA</h3>
+                  <p class="program-card-desc">Popular specializations: General Management, HRM, Marketing, Finance,
+                    Business Analytics, Healthcare, Travel & Tourism.</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">3 years · 6 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">G.C.E. Advanced Level or recognized equivalent</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Manipal, Amity, LPU, CU, VGU, JAIN, NMIMS, Symbiosis, DPU, SRM</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20Online%20BBA%20program."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card 02: Bachelor of Computer Applications (BCA) -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">02</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <i class="bi bi-window-fullscreen"></i>
+                  <span class="badge-acronym">BCA</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">UNDERGRADUATE</span>
+                  <h3 class="program-card-title">Online BCA</h3>
+                  <p class="program-card-desc">Popular specializations: General IT, Data Analytics, Cloud & Cyber
+                    Security, Software Engineering, Web Development.</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">3 years · 6 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">G.C.E. Advanced Level or recognized equivalent</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Manipal, Amity, LPU, CU, VGU, JAIN, Symbiosis, DPU, SRM</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20Online%20BCA%20program."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card 03: Bachelor of Commerce (BCom) -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">03</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <i class="bi bi-wallet2"></i>
+                  <span class="badge-acronym">BCom</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">UNDERGRADUATE</span>
+                  <h3 class="program-card-title">Online BCom</h3>
+                  <p class="program-card-desc">Popular specializations: General Accounting, Corporate Finance,
+                    International Accounting & ACCA Integration.</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">3 years · 6 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">G.C.E. Advanced Level or recognized equivalent</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Manipal, Amity, LPU, CU, JAIN, NMIMS, SRM</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20Online%20BCom%20program."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card 04: Online BA & BSc -->
+          <div class="program-item-card">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+
+              <!-- Left Details Group -->
+              <div class="d-flex align-items-start gap-3 gap-md-4 flex-grow-1">
+                <span class="program-card-num mt-1">04</span>
+
+                <!-- Acronym Badge -->
+                <div class="program-badge-box">
+                  <i class="bi bi-journal-text"></i>
+                  <span class="badge-acronym">BA/BSc</span>
+                </div>
+
+                <!-- Info Group -->
+                <div class="flex-grow-1">
+                  <span class="program-level-tag">UNDERGRADUATE</span>
+                  <h3 class="program-card-title">Online BA & BSc</h3>
+                  <p class="program-card-desc">Popular specializations: BA (English, Economics, Journalism & Mass Comm),
+                    BSc (Data Science & Economics).</p>
+
+                  <!-- Meta Details -->
+                  <div class="program-meta-list">
+                    <div class="program-meta-item">
+                      <i class="bi bi-clock"></i>
+                      <div>
+                        <div class="meta-label">DURATION</div>
+                        <div class="meta-val">3 years · 6 semesters</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <div class="meta-label">MINIMUM ENTRY</div>
+                        <div class="meta-val">G.C.E. Advanced Level or recognized equivalent</div>
+                      </div>
+                    </div>
+                    <div class="program-meta-item">
+                      <i class="bi bi-buildings"></i>
+                      <div>
+                        <div class="meta-label">PARTNER UNIVERSITIES</div>
+                        <div class="meta-val">Amity, LPU, CU, VGU, Symbiosis, DPU</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Right Action Button -->
+              <div class="align-self-stretch align-self-lg-center text-lg-end">
+                <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20request%20the%20fee%20guide%20for%20the%20Online%20BA%20and%20BSc%20programs."
+                  target="_blank" rel="noopener noreferrer" class="btn-fee-guide">
+                  Request fee guide <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ===============================================
+           BOTTOM ADVISOR BANNER
+           =============================================== -->
+      <div class="program-advisor-card">
+        <div
+          class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4">
+          <div class="d-flex align-items-start gap-3">
+            <span class="advisor-icon mt-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"></path>
+              </svg>
+            </span>
+            <div>
+              <h4 class="advisor-title">Not sure which program is right for you?</h4>
+              <p class="advisor-desc">Tell us about your education and career goals. Our advisors will compare suitable
+                options across our partner universities—free of charge.</p>
+            </div>
+          </div>
+          <div class="align-self-stretch align-self-lg-center text-lg-end">
+            <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20need%20advice%20on%20choosing%20the%20right%20program."
+              target="_blank" rel="noopener noreferrer" class="btn-talk-advisor">
+              Talk to an advisor <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================
+       PRE-FOOTER CTA STRIP
+       =================================================== -->
+  <section class="pre-footer-cta">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4">
+
+        <!-- Left Headline -->
+        <div class="col-lg-6">
+          <span class="cta-tagline">TAKE THE NEXT STEP</span>
+          <h2 class="cta-heading">Your global degree is closer than you think.</h2>
+        </div>
+
+        <!-- Right Subtext & Button -->
+        <div class="col-lg-5 col-xl-4 text-lg-end">
+          <p class="cta-desc ms-lg-auto">Get a personalized program comparison and transparent fee guide—completely
+            free.</p>
+          <a href="https://wa.me/94721234335?text=Hello%20UniHub%20Lanka,%20I%20would%20like%20to%20chat%20with%20an%20advisor."
+            target="_blank" rel="noopener noreferrer" class="btn-cta-white">
+            Chat with an advisor <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gold Thin Accent Line -->
+  <div class="gold-stripe-divider"></div>
+
+  <!-- ===================================================
+       GLOBAL SITE FOOTER
+       =================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- Top 4 Columns Grid -->
+      <div class="row g-4 g-lg-5 justify-content-between">
+
+        <!-- Column 1: Brand & Contact -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block">
+            <img src="assest/unihub.png" alt="UniHub Lanka Logo" class="footer-logo">
+          </a>
+          <p class="footer-brand-desc">
+            Your trusted gateway to globally recognized, flexible, and affordable university qualifications.
+          </p>
+          <p class="small text-muted mt-2 mb-3">
+            In partnership with <a
+              href="https://collegevidya.in/partner-online-courses/?source_campaign=Influencer&campaign_name=INF8800&ad_group_name=email&ads_name=3286&partner_type=LOM&gad_source=1"
+              target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-semibold"
+              style="color: var(--accent-gold);">College Vidya</a>
+          </p>
+          <div>
+            <a href="tel:+94721234335" class="footer-contact-item">
+              <i class="bi bi-telephone-fill text-primary"></i> +94 72 123 4335
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Explore -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-widget-title">EXPLORE</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="universities.html">Universities</a></li>
+            <li><a href="admissions-faq.html">Recognition & FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Programs -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-widget-title">PROGRAMS</h4>
+          <ul class="footer-links-list">
+            <li><a href="programs.html#degreeTabs">Online MBA</a></li>
+            <li><a href="programs.html#degreeTabs">MCA</a></li>
+            <li><a href="programs.html#degreeTabs">MSc Data Science</a></li>
+            <li><a href="programs.html#degreeTabs">BBA, BCom & BCA</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Visit Us -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-widget-title">VISIT US</h4>
+          <div class="footer-address">
+            616, 6th Floor,<br>
+            Janajaya City,<br>
+            Rajagiriya, Sri Lanka
+          </div>
+          <a href="mailto:contact@unihublanka.lk" class="footer-email">
+            contact@unihublanka.lk
+          </a>
+          <div>
+            <a href="https://www.facebook.com/p/UniHub-Lanka-61596291643343/" target="_blank" rel="noopener noreferrer"
+              class="footer-fb-link">
+              <i class="bi bi-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/unihub_lanka?fqnt=M2hlaXMzdmpxa2N1" target="_blank"
+              rel="noopener noreferrer" class="footer-fb-link">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mandatory Disclosure Text -->
+      <div class="footer-disclosure">
+        <p class="footer-disclosure-text" align="center">
+          UniHub Lanka (Pvt) Ltd acts strictly as an independent admissions facilitation and student guidance
+          consultancy. All academic programs, curricula, examinations, and degree certificates are administered and
+          awarded solely by the respective UGC-DEB entitled Indian partner universities. Tuition fees are remitted
+          directly by students to official university portals. Final recognition for employment, further study, or
+          migration rests with the relevant evaluating body, university, or immigration authority.
+        </p>
+      </div>
+
+      <!-- Bottom Credits Bar -->
+      <div class="footer-bottom-bar">
+        <div class="mb-1">© 2026 UniHub Lanka (Pvt) Ltd. All rights reserved.</div>
+        <div>Developed by <span class="developer-credit"><a href="https://www.linkedin.com/in/hashen-yasaru/ ">Hashen
+              Yasaru</a></span></div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       FLOATING WHATSAPP BUTTON (On all pages)
+       =================================================== -->
+  <a href="https://wa.me/94721234335" target="_blank" rel="noopener noreferrer" class="floating-whatsapp"
+    aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
